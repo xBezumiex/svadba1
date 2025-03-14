@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свадьба</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="js/index.js">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="images/v1_4.png" alt="Логотип компании" class="logo">
+            <div class="burger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#section1">Свадьбы на заказ</a></li>
+                <li><a href="#section2">О нас</a></li>
+                <li><a href="#services-section">Услуги</a></li>
+                <li><a href="#section4">Работы</a></li>
+                <li><a href="#section5">Портфолио</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>function toggleMenu() {
+            const burger = document.querySelector('.burger');
+            const navLinks = document.querySelector('.nav-links');
+            burger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+
+
+    <section><img class="image1" src="images/image 60.png" alt="Свадебная картинка"></section>
+
+    <main>
+        <!-- Существующие секции -->
+        <section class="section1" id="section1">
+            <h1>Делаем стильные свадьбы на любой бюджет</h1>
+            <div class="icons-section">
+                <div class="icon">
+                    <img src="images/v1_12.png" alt="Персональный менеджер">
+                    <p>Персональный менеджер для консультации </p>
+                </div>
+                <div class="icon">
+                    <img src="images/v1_13.png" alt="Современная мебель">
+                    <p>Современная мебель </p>
+                </div>
+                <div class="icon">
+                    <img src="images/v1_14.png" alt="Фотосессия на свежем воздухе">
+                    <p>Фотосессия на территории и на свежем воздухе</p>
+                </div>
+                <div class="icon">
+                    <img src="images/v1_15.png" alt="Вызов такси">
+                    <p>Вызовем такси до места встречи</p>
+                </div>
+            </div>
+            <button class="btn">Обсудить встречу</button>
+        </section>
+
+        <section class="section2" id="section2">
+            <h1>Свадьба с нами дешевле и проще, чем свадьба без нас</h1>
+            <div class="container">
+                <div class="text">
+                    <h2>У нас всегда выгодные условия от подрядчиков</h2>
+                    <p>Все площадки и подрядчики заинтересованы работать с агентством, потому что мы приводим
+                        клиентов,
+                        а значит у нас всегда будут самые выгодные условия сотрудничества и скидки. А еще все
+                        подрядчики
+                        будут особенно тщательно следить за качеством, чтобы мы вернулись к ним с новыми заказами.
+                    </p>
+                </div>
+                <img src="images/Star 3.png" alt="" class="image12">
+            </div>
+            <div class="container">
+                <div class="text">
+                    <h2>Наш гонорар входит в ваш бюджет</h2>
+                    <p>Расходы на наши услуги уже входят
+                        в оговоренный заранее бюджет и вы не потратите ни копейкой больше.</p>
+                </div>
+                <img src="images/Star 3.png" alt="" class="image12">
+            </div>
+            <div class="container">
+                <div class="text">
+                    <h2>Мы предложим лучшие варианты для вашего бюджета</h2>
+                    <p>Мы знаем рынок площадок и подрядчиков, а значит вам не придется тратить несколько месяцев на
+                        его
+                        изучение. Мы предоставим вам лучшие варианты в вашем бюджете, а вы выберете из них то, что
+                        вам
+                        по душе.
+                    </p>
+                </div>
+                <img src="images/Star 3.png" alt="" class="image12">
+            </div>
+        </section>
+
+        <section class="taxi-section" id="taxi-section">
+            <div class="taxi-form-overlay">
+                <div class="taxi-form">
+                    <h2>ВЫЗОВЕМ ТАКСИ ДО МЕСТА ВСТРЕЧИ</h2>
+                    <input type="text" placeholder="Откуда">
+                    <input type="text" placeholder="Подъезд или место встречи">
+                    <input type="text" placeholder="Куда">
+                    <div class="radio-buttons">
+                        <label><input type="radio" name="time"> Сейчас</label>
+                        <label><input type="radio" name="time"> Предварительный заказ</label>
+                    </div>
+                    <button>Заказать такси</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Новая секция с услугами -->
+        <section class="services-section " id="services-section">
+            <h1>Наши услуги</h1>
+            <div class="services-grid">
+                <!-- Блок 1 -->
+                <div class="service-card">
+                    <h2>Организация связи под ключ</h2>
+                    <p>Мы делаем только стабильную и надежную связь. Наш новорубеж не входит в ваш бюджет и не
+                        влияет на его предел. Мы берем 10% от бюджета обычных связей, не менее 50 000 рублей.
+                        Кампания связи индивидуально.
+                    </p>
+
+                    <p class="price">Цена: 10 000 руб.</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+                <!-- Блок 2 -->
+                <div class="service-card">
+                    <h2>Подбор идеальной площадки</h2>
+                    <p>Фото многих площадок сильно отличаются от реальности, поэтому каждую потенциально подходящую
+                        площадку нужно увидеть вживую.
+                        Предоставим вам площадки те, которые максимально подходят под ваш запрос и достойны
+                        просмотра. </p>
+                    <p class="price">Цена: 5 000 руб.</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+                <!-- Блок 3 -->
+                <div class="service-card">
+                    <h2>Ведущий, музыка,шоу</h2>
+                    <p>Мы поможем подобрать ведущего, с которым будем весело и не стыдно. Разработаем сценарий,
+                        тайминг, подберем диджея и музыку, под которую все будут танцевать. Организуем кавер группу
+                        или пригласим звезду.
+                    </p>
+                    <p class="price">Цена: 10 000 руб.</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+                <!-- Блок 4 -->
+                <div class="service-card">
+                    <h2>Подбор фотографа, видеографа</h2>
+                    <p>Возможно, сейчас вам кажется, что после свадьбы вы не будете пересматривать фото и видео.
+                        Просто поверьте, это не так. Мы поможем выбрать фотографа и видеографа, которые будут точно
+                        соответствовать вашему запросу.</p>
+                    <p class="price">Цена: 5 000 руб.</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+                <!-- Блок 5 -->
+                <div class="service-card">
+                    <h2>Координатор</h2>
+                    <p>Но в день свадьбы невеста должна отдыхать и веселиться, а не отвечать на звонки опаздывающих
+                        гостей и координировать подрядчиков. Координатор будет следить за таймингом, помогать
+                        гостям, отвечать на звонки и следить за качеством работы подрядчиков.</p>
+                    <p class="price">Цена: 5 000 руб.</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+                <div class="service-card">
+                    <h2>Аудит свадебного дня</h2>
+                    <p>Вы все организовали самостоятельно, но осталось ощущение незавершенности, и нет 100%
+                        уверенности, что вы продумали все детали?
+                        Поможем в составлении тайминга, проверить площадку и всех подрядчиков, доработать меню и
+                        проверить расчет алкоголя, и закрыть все оставшиеся вопросы. </p>
+                    <p class="price">Цена: 5 000 руб.</p>
+                    <button class="order-btn">Заказать</button>
+                </div>
+            </div>
+            <div class="subscribe-section">
+                <h2>Расскажем лучших предложений и услуг</h2>
+                <div class="subscribe-form">
+                    <div class="input-container">
+                        <input type="email" placeholder="Email">
+                        <button class="subscribe-btn">Подписаться</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="containerr" id="containerr">
+            <h1>Как мы работаем</h1>
+            <div class="steps">
+                <div class="step">
+                    <p>Встреча</p>
+                    <button>&#9654;</button>
+                </div>
+                <div class="step">
+                    <p>Подготовка к свадьбе</p>
+                    <button>&#9654;</button>
+                </div>
+                <div class="step">
+                    <p>Сдача материалов</p>
+                    <button>&#9654;</button>
+                </div>
+                <div class="step">
+                    <p>Проведение свадьбы</p>
+                    <button>&#9654;</button>
+                </div>
+
+                <div class="step">
+                    <p>Заключение договора</p>
+                    <button>&#9654;</button>
+                </div>
+                <div class="qr-code">
+                    <p>Связаться с нами</p>
+                    <img src="images/v1_188.png" alt="QR Code">
+                </div>
+        </section>
+
+
+
+        <section class="portfolio-section">
+            <div class="contaiiner">
+                <h2>Портфолио</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="images/image 13.jpg" alt="cвадььба">
+                        <h3>Григорий и Анна</h3>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/image 16.1.jpg" alt="cвадььба">
+                        <h3>Кирилл и Дарья</h3>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/image 18.jpg" alt="cвадььба">
+                        <h3>Дмитрий и Марина</h3>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/image 28.jpg" alt="cвадььба">
+                        <h3>Алексей и Ирина</h3>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/image 32.jpg" alt="cвадььба">
+                        <h3>Алексей и Мария</h3>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="images/image 34.jpg" alt="cвадььба">
+                        <h3>Валерия и Илья</h3>
+                    </div>
+                </div>
+                <p class="footer-text">Больше фотографий из альбомов тут → <a href="https://instagram.com"
+                        target="_blank"><img src="images/v1_179.png" class="instagram-icon" alt="Instagram"></a></p>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <section class="wedding-section" id="taxi-section">
+            <div class="wedding-form-overlay">
+                <div class="wedding-form">
+                    <h2>Оставить заявку</h2>
+                    <input type="text" placeholder="Имя">
+                    <input type="email" placeholder="Email">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="agreement">
+                        <label for="agreement">я согласен на обработку персональных данных и с правилами пользования
+                            платформы</label>
+                    </div>
+                    <button>Организовать свадьбу</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Все права защищены</p>
+    </footer>
+</body>
+
+</html>
