@@ -23,31 +23,34 @@ header {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
   margin: 0 auto;
-  
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  position: relative;
+  max-width: 1200px; /* Опционально: максимальная ширина */
+  margin: 0 auto;    /* Центрируем nav */
+  position: relative; /* Для правильного позиционирования бургера */
 }
 
 .logo {
   width: 120px;
   height: auto;
+  margin-right: 20px; /* Отступ справа от логотипа */
 }
 
 .nav-links {
-  display: flex; /* По умолчанию видно на больших экранах */
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+  flex-grow: 1;          /* Позволяет ссылкам занять доступное пространство */
+  justify-content: space-between; /* Равномерное распределение ссылок */
 }
 
 .nav-links li {
-  margin: 0 15px;
+  margin: 0; /* Убираем фиксированные отступы */
 }
 
 .nav-links li a {
@@ -57,7 +60,7 @@ nav {
 }
 
 .burger {
-  display: none;
+  display: none;         /* Скрыто по умолчанию */
   flex-direction: column;
   cursor: pointer;
   padding: 10px;
@@ -836,29 +839,29 @@ h2 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* Можно настроить breakpoint по вашим нуждам */
   .burger {
-    display: flex; /* Показываем бургер на маленьких экранах */
-}
+    display: flex;       /* Показываем бургер на мобильных */
+  }
 
-.nav-links {
-    display: none; /* Скрываем меню */
-    flex-direction: column;
-    width: 100%;
+  .nav-links {
+    display: none;       /* Скрываем ссылки по умолчанию на мобильных */
+    flex-direction: column; /* Вертикальное расположение */
     position: absolute;
-    top: 100%;
+    top: 100%;           /* Под header */
     left: 0;
-    background-color: #fff;
+    width: 100%;
+    background: #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px 0;
-    text-align: center;
-}
+  }
 
-.nav-links.active {
-    display: flex; /* Показываем при активации */
-}
+  /* Класс для показа меню при клике на бургер - добавляется через JS */
+  .nav-links.active {
+    display: flex;
+  }
 
-.nav-links li {
-    margin: 15px 0;
-}
+  .nav-links li {
+    margin: 15px 0;      /* Вертикальные отступы для пунктов меню */
+    text-align: center;  /* Центрируем текст */
+  }
 }
